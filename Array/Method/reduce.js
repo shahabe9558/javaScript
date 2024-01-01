@@ -1,4 +1,27 @@
 
+// reduce function on objeccts  
+const employee = [
+    {
+        Name: "A",
+        Age : 25,
+        Salary: 200,
+    },
+    {
+        Name: "B",
+        Age : 29,
+        Salary: 500,
+    },
+]
+function myFunc(total, num, index)
+{
+    return total.Name + num.Name;
+}
+// console.log(employee[0].Salary + employee[1].Salary);
+console.log(employee.reduce(myFunc));
+
+
+// reduce function on array 
+
 const myFunc = (total, num, index)=>{
     // toatal represent at o index 
     // num represent at 1 index 

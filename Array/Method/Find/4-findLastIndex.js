@@ -1,0 +1,8 @@
+// return the last occurence Element index 
+function myFun(value, index, arr)
+{
+    return value > 4;
+}
+
+const arr = [1,2,3,4,5,6,7];
+console.log(arr.findLastIndex(myFun));
