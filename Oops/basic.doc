@@ -1,0 +1,11 @@
+{
+    Que-1: What is Object...?
+    Ans: An object is a unique entity which contains property and method.
+    For example “a car” is a real-life Object, which has some characteristics like
+    color, type, model, and horsepower and performs certain actions like driving. 
+    The characteristics of an Object are called Properties in Object-Oriented
+    Programming and the actions are called methods. An Object is an instance of a 
+    class. Objects are everywhere in JavaScript, almost every element is an Object 
+    whether it is a function, array, or string.  
+    A Method in javascript is a property of an object whose value is a function. 
+}
