@@ -1,9 +1,12 @@
-function swap(arr[i], arr[j])
-{
-   let temp = arr[i];
-   arr[i] = arr[j];
-   arr[j] = temp;
+function update(obj){
+    let obj2 = obj;
+    obj2.value = "string"
+    console.log(obj);
+    console.log(obj2);
 }
-const arr = [12,11,10,8,9];
-swap(arr[0], arr[1]);
-console.log(arr);
+
+let obj ={
+    value: 5,
+};
+update(obj);
+console.log(obj);
