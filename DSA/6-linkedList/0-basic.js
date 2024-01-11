@@ -44,6 +44,43 @@ class List {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+    deleteNode(position)
+    {
+        // node is starting 
+        if(position == 1)
+        {
+            let temp = this.head;
+            this.head = this.head.next;
+            temp.next = null;
+            temp = undefined;
+        }
+        // if node is lastNode
+        // pahle to node tak pahuchna hoga 
+        let curr = this.head;
+        let pre = null;
+        let cnt = 1;
+        while(cnt < position){
+            pre = curr
+            curr = curr.next;
+            cnt++;
+        }
+        // if postion is last 
+        if(position == 4)
+        {
+            pre.next = curr.next;
+            this.tail = pre;
+            curr.next = null;
+            curr = undefined;
+        }
+        // // positon delete karna hai 
+        else{
+            pre.next = curr.next;
+            curr.next = null;
+            curr = undefined;
+        }
+
+
+    }
     print(){
         if(this.head === null)
         {
@@ -62,6 +99,7 @@ let list = new List(10);
 list.inserAtTail(12);
 list.insertAtHead(8);
 list.insertAtPostion(11, 3);
+list.deleteNode(2);
 list.print();
 console.log(list.head);
 console.log(list.tail);
