@@ -1,7 +1,7 @@
 class List {
     constructor(data)
     {
-        // initially tail is pointin to head 
+        // initially tail is pointing to head 
         this.head = {
             value: data,
             next : null,
