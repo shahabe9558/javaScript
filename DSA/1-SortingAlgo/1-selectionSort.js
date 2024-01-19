@@ -12,15 +12,13 @@ function selectionSort(arr){
     let n = arr.length;
     for(let i = 0; i<n-1; i++)
     {
-        for(let i = 0; i<n-1; i++)
-        {
-            for(let j = i+1; j<n; j++){
-                if(arr[i] > arr[j])
-                {
-                    swap(arr, i, j);
-                }
+        for(let j = i+1; j<n; j++){
+            if(arr[i] > arr[j])
+            {
+                swap(arr, i, j);
             }
         }
+        console.log(arr);
     }
 }
 const arr = [64, 25, 12, 22, 11];
