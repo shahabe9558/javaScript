@@ -1,10 +1,20 @@
- function numberType(num){
-    if(num % 2 == 0)
+//  function numberType(num){
+//     if(num % 2 == 0)
+//     {
+//         console.log("Number is Even");
+//     }
+//     else{
+//         console.log("Number is odd");
+//     }
+//  }
+//  numberType(4)
+function numEvenOdd(num)
+{
+    if(num & 1)
     {
-        console.log("Number is Even");
+        console.log("Num is odd");
+    }else{
+        console.log("Num is even");
     }
-    else{
-        console.log("Number is odd");
-    }
- }
- numberType(4);
+}
+numEvenOdd(4);

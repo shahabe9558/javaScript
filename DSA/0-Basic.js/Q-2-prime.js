@@ -1,15 +1,15 @@
 // optimal appraoch 
-const isPrime2 = (n) => {
-   for(let i = 2; i<=Math.sqrt(n); i++)
-   {
-     if(n % i == 0)
-     {
-        return false;
-     }
-   }
-   return true;
-}
-console.log(isPrime2(4));
+// const isPrime2 = (n) => {
+//    for(let i = 2; i<=Math.sqrt(n); i++)
+//    {
+//      if(n % i == 0)
+//      {
+//         return false;
+//      }
+//    }
+//    return true;
+// }
+// console.log(isPrime2(4));
 
 
 
@@ -17,14 +17,15 @@ console.log(isPrime2(4));
 
 
 // time complexity is onabort(n)
-const isPrime = function(n){
-   for(let i = 2; i<n; i++)
+function isPrime(num)
+{
+   for(let i = 2; i<num; i++)
    {
-    if(n % i == 0)
-        {
-            return false;
-        }
+      if(num % i == 0)
+      {
+         return false;
+      }
    }
    return true;
 }
-// console.log(isPrime(11));
+console.log(isPrime(12));

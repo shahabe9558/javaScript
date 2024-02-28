@@ -1,11 +1,11 @@
-let date = new Date();
-let tolocal = date.toLocaleString();
-console.log(tolocal);
+var obj = {
+  firstName : "Alam",
+  lasrName : "Shahabe",
+  fullName : function (){
+    console.log(`The full name is ${this.firstName} ${this.lasrName}`);
+    console.log(this);
+  }
+}
 
-
-const num = 1234.4343;
-let numlocal = num.toLocaleString();
-console.log(numlocal);
-
-const arr = [1,233,4,343,323];
-console.log(arr.toLocaleString());
+let display = obj.fullName.bind(obj);
+setTimeout(display, 2000);

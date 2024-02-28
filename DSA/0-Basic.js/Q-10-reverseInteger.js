@@ -14,7 +14,6 @@ console.log(reverse(34));
 
 // let reverse = (n) =>{
 //     let ans = "";
-//     console.log(ans.length);
 //     while(n)
 //     {
 //         let digit = n % 10;

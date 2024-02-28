@@ -1,4 +1,7 @@
-
+function mergeTwoSortedArray(arr, s, e)
+{
+    
+}
 
 function mergeSort(arr, s, e) 
 {
@@ -12,8 +15,9 @@ function mergeSort(arr, s, e)
     mergeSort(arr, s, mid);
     // right part merge sorted array lagao 
     mergeSort(arr, mid + 1, e);
-    
-    // mergeTwoSortedArray();
+    mergeTwoSortedArray(arr, s, e);
+    // console.log(arr);
+    // return arr;
     
 }
 const arr = [38, 27, 43, 3, 9, 82, 10];

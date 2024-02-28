@@ -5,6 +5,7 @@ let person = {
         console.log(this.fName + " " + this.lName);
     }
 }
+// when function is used as callback this is lost 
 // this problem solve by the bind method
 // setTimeout(person.display, 2000);
 

@@ -1,5 +1,5 @@
-var a = 4;
-var b = 6;
+var a = 2;
+var b = 3;
 console.log("~a", ~a);
 console.log("a & b", a & b);
 console.log("a | b", a | b);
